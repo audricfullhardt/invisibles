@@ -1,47 +1,52 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div class="container">
+    <div class="page" id="page1">
+      <h1 class="centered-text">Corentin Marlier & Audric FULLHARDT présentent les invisibles</h1>
     </div>
-  </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <div class="page" id="page2">
+      <p class="centered-text">
+        Est invisible celui qui n'est pas visible. Pas visible au cœur même de la société. 
+        Est invisible celui que l'on ne voit pas ou que l'on ne veut pas voir. 
+        Celui qui n'est pas, ou peu, ou mal représenté. 
+        Que ce soit dans les médias, dans la politique ou sur le devant de la scène.
+      </p>
+      <p class="author">Clarence Massiani</p>
+    </div>
+
+    <div class="page" id="page3">
+      <p class="centered-text">
+        En France, 42 000 enfants sont Sans Abris...<br>
+        Vous pouvez aujourd'hui découvrir l'histoire de certains d'entre-eux ainsi que leur quotidien...
+      </p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.container {
+  min-height: 100vh;
+  scroll-snap-type: y mandatory;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  padding: 2rem;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.centered-text {
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.author {
+  margin-top: 2rem;
+  font-style: italic;
 }
 </style>
