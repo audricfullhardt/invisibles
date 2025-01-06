@@ -22,39 +22,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-
-h1, p{
-  color: white;
-}
-.container {
-  min-height: 100vh;
-  scroll-snap-type: y mandatory;
-}
-
-.page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-  background-color: #444444
-}
-
-.centered-text {
-  text-align: center;
-  max-width: 800px;
-  line-height: 1.6;
-}
-
-.author {
-  margin-top: 2rem;
-  font-style: italic;
-}
-</style>
