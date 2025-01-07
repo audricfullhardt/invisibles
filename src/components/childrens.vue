@@ -1,10 +1,21 @@
 <template>
     <div class="page" id="page4">
+        <div class="childrens-title">
+            <h1>Séléctionnez un enfant pour connaître son histoire</h1>
+        </div>
         <div class="grid-container">
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
+            <router-link to="/henry" class="grid-item-link">
+                <div class="grid-item"></div>
+            </router-link>
+            <router-link to="/mohamed" class="grid-item-link">
+                <div class="grid-item"></div>
+            </router-link>
+            <router-link to="/avraham" class="grid-item-link">
+                <div class="grid-item"></div>
+            </router-link>
+            <router-link to="/rania" class="grid-item-link">
+                <div class="grid-item"></div>
+            </router-link>
         </div>
     </div>
 </template>
@@ -16,6 +27,14 @@ export default {
 </script>
 
 <style scoped>
+.childrens-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -28,11 +47,21 @@ export default {
 .grid-item {
     background-size: cover;
     background-position: center;
-    min-height: 200px;
+    height: 100%;
 }
 
-.grid-item:nth-child(1) { background-image: url('../assets/childrens/henry.png'); }
-.grid-item:nth-child(2) { background-image: url('../assets/childrens/mohamed.png'); }
-.grid-item:nth-child(3) { background-image: url('../assets/childrens/avraham.png'); }
-.grid-item:nth-child(4) { background-image: url('../assets/childrens/rania.png'); }
+.grid-container a:nth-child(1) .grid-item { background-image: url('../assets/childrens/henry.png'); }
+.grid-container a:nth-child(2) .grid-item { background-image: url('../assets/childrens/mohamed.png'); }
+.grid-container a:nth-child(3) .grid-item { background-image: url('../assets/childrens/avraham.png'); }
+.grid-container a:nth-child(4) .grid-item { background-image: url('../assets/childrens/rania.png'); }
+
+.grid-item-link {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.grid-item-link:hover {
+    transform: scale(1.05);
+}
 </style>
