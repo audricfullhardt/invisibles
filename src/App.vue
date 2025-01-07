@@ -1,9 +1,14 @@
 <template>
-  <div class="container">
-    <Landing />
-    <Author />
-    <Intro />
-    <Childrens />
+  <div id="app">
+    <template v-if="$route.path === '/'">
+      <landing />
+      <author />
+      <intro />
+      <Childrens />
+    </template>
+    <template v-else>
+      <router-view></router-view>
+    </template>
   </div>
 </template>
 
@@ -18,7 +23,7 @@ export default {
     Landing,
     Author,
     Intro,
-    Childrens,
-  },
+    Childrens
+  }
 };
 </script>
