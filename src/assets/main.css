@@ -1,41 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    overflow: scroll;
-    scrollbar-width: none;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-  }
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  h1, p {
-    color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
-  .container {
-    min-height: 100vh;
-  }
-  
-  .page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    background-color: #444444;
-  }
-  
-  .centered-text {
-    text-align: center;
-    max-width: 800px;
-    line-height: 1.6;
-  }
-  
-  .author {
-    margin-top: 2rem;
-    font-style: italic;
+h1, p {
+    color: #ffffff;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-color: #444444;
 }
