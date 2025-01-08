@@ -4,7 +4,7 @@
       <div class="child-content">
         <div class="info-section">
           <div class="picture"></div>
-            <h1>Rania</h1>
+            <h1>Maware, Katia et Marniya</h1>
             <p>Mawara, 10 ans, entre en CM1 cette année, tandis que ses sœurs, Katia et Marniya, 7 et 6 ans, font leur rentrée en CP. Malgré la joie de retrouver l'école, elles ont passé leurs nuits dans la rue avec leur mère, faute de place en hébergement d'urgence. Leur situation difficile n'empêche pas Mawara de continuer à se battre pour ses études, tandis que ses sœurs, malgré leur jeune âge, affrontent elles aussi cette dure réalité.</p>
             <div class="video-container">
                 <iframe 
