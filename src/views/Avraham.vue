@@ -3,17 +3,17 @@
         <a @click="goBackToChildrens" class="back-button">Retour</a>
       <div class="child-content">
         <div class="info-section">
+          <div class="picture"></div>
             <h1>Avraham</h1>
-            <div class="picture"></div>
             <p>Avraham, 9 ans et demi, vit dans une école</p>
-        </div>
-        <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/VNLMRqDS3lk" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/VNLMRqDS3lk" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
       </div>
     </div>
@@ -43,65 +43,81 @@
   background-color: #444444;
 }
 
-.child-content {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.info-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.video-container {
-    width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 h1 {
     color: #ffffff;
     font-family: 'Lora', serif;
     font-size: 2rem;
     font-weight: 600;
-    width: 300px;
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
+    grid-column: 2 / 4;
+}
+
+p {
+    grid-column: 1;
+    grid-row: 2;
+    color: #ffffff;
+    margin: 0;
 }
 
 .back-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-family: 'Lora', serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.content-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .picture {
     width: 300px;
     height: 300px;
     background-color: #ffffff;
-    background-image: url('../assets/childrens/avraham.png');
+    background-image: url('../assets/childrens/rania.png');
     background-size: cover;
     background-position: center;
+}
+
+.video-container {
+    position: relative;
+    grid-column: 2 / 4;
+    width: 100%;
+    height: 400px;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 </style>
