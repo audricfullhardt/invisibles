@@ -5,7 +5,12 @@
       <div class="info-section">
         <div class="picture"></div>
         <h1>Henry</h1>
-        <p>Henry et sa mère Naomi ont choisi de garder le sourire...</p>
+        <p>Henry, 15 ans, et sa mère Naomi affrontent chaque jour la dure réalité de la vie sans domicile fixe. Malgré les épreuves, ils ont choisi de garder le sourire et de s'accrocher à l'espoir d'un avenir meilleur.
+
+Henry, qui devrait entrer en classe de seconde, n'est malheureusement pas scolarisé, faute d'une situation stable.
+Naomi, mère célibataire et dévouée, se bat pour offrir à son fils un toit et un semblant de normalité. Mais trouver un logement en région parisienne reste un défi insurmontable, avec des listes d'attente interminables et des solutions temporaires toujours précaires.
+
+Ensemble, ils représentent une réalité que trop de gens ignorent : celle des familles qui, bien qu'en difficulté, font preuve d'une résilience extraordinaire pour avancer malgré tout.</p>
         <div class="video-container">
           <iframe 
               src="https://www.youtube.com/embed/nVT_1tVA1RM" 

@@ -5,7 +5,7 @@
         <div class="info-section">
           <div class="picture"></div>
             <h1>Mohamed</h1>
-            <p>Mohamed, 10 ans, vit dans un logement insalubre avec sa maman handicapée</p>
+            <p>Mohamed, 10 ans, est un jeune garçon brillant, curieux et passionné par l’aéronautique. Depuis son plus jeune âge, il rêve de devenir pilote de ligne et passe de nombreuses heures à étudier les avions et à s'informer sur l'aviation. Son intelligence et sa détermination sont remarquables, mais son quotidien est bien loin de l’avenir qu’il espère. Mohamed vit avec sa mère, qui est handicapée, dans des logements insalubres. Leur situation précaire les oblige à faire face à de nombreux défis : des conditions de vie difficiles, un manque de ressources et une grande précarité. Pourtant, Mohamed n'abandonne jamais son rêve et continue de nourrir sa passion pour l'aviation, croyant fermement qu'un jour, il pourra surmonter ces obstacles. Sa mère, malgré son handicap, est une source de soutien inébranlable pour lui. Leur relation est empreinte d'une profonde complicité et d'une détermination commune à lutter pour un avenir meilleur.</p>
             <div class="video-container">
                 <div class="video-placeholder">
                     <p>Cette vidéo est disponible sur Arte TV</p>

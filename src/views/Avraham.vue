@@ -5,7 +5,7 @@
         <div class="info-section">
           <div class="picture"></div>
             <h1>Avraham</h1>
-            <p>Avraham, 9 ans et demi, vit dans une école</p>
+            <p>Avraham, 9 ans et demi, vient de Roumanie et a vécu une expérience difficile avant de trouver un abri. Pendant six mois, lui, ses parents et sa sœur ont dormi dans la rue, affrontant la précarité et les conditions de vie extrêmement difficiles. Aujourd'hui, ils sont logés dans une école, où ils partagent une chambre ensemble, mais l'ombre de la rue reste présente dans leur quotidien. Malgré son jeune âge, Avraham fait preuve d’une grande résilience et d’une force intérieure impressionnante. Il est déterminé à s’intégrer et à réussir, même après avoir traversé de telles épreuves. Son histoire est celle d’un enfant qui, malgré la souffrance et les traumatismes, garde l’espoir d’un avenir meilleur.</p>
             <div class="video-container">
                 <iframe 
                     src="https://www.youtube.com/embed/VNLMRqDS3lk" 
