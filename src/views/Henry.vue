@@ -26,7 +26,7 @@ export default {
     goBackToChildrens() {
       this.$router.push('/');
       setTimeout(() => {
-        const element = document.getElementById('page4');
+        const element = document.getElementById('childrens');
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
