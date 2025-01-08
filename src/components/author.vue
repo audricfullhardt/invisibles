@@ -30,4 +30,32 @@
       font-family: 'Lora', serif;
       max-width: 80%;
 }
+
+/* Ajout des media queries pour tablette */
+@media screen and (max-width: 768px) {
+    .p-centered-text {
+        font-size: 2rem;
+        max-width: 90%;
+        line-height: 1.5;
+    }
+
+    .author {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Ajout des media queries pour mobile */
+@media screen and (max-width: 480px) {
+    .p-centered-text {
+        font-size: 1.5rem;
+        max-width: 95%;
+        line-height: 1.4;
+    }
+
+    .author {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+}
   </style>  

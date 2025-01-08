@@ -145,4 +145,71 @@ p {
 .watch-button:hover {
     background-color: #E54540;
 }
+
+/* Ajout des media queries pour tablette */
+@media screen and (max-width: 768px) {
+    .info-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .picture {
+        width: 250px;
+        height: 250px;
+    }
+
+    .video-container {
+        height: 300px;
+        grid-column: 1 / 3;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        grid-column: 1 / 3;
+    }
+
+    p {
+        grid-column: 1 / 3;
+    }
+}
+
+/* Ajout des media queries pour mobile */
+@media screen and (max-width: 480px) {
+    .info-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .picture {
+        width: 100%;
+        height: 250px;
+    }
+
+    .video-container {
+        grid-column: 1;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        grid-column: 1;
+    }
+
+    p {
+        grid-column: 1;
+    }
+
+    .child-content {
+        padding: 10px;
+    }
+
+    .back-button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+
+    .watch-button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}
 </style>

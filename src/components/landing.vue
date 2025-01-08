@@ -45,4 +45,47 @@
       line-height: 1.6;
       font-family: 'Lora', serif;
 }
+
+/* Ajout des media queries pour tablette */
+@media screen and (max-width: 768px) {
+    .centered-text {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    .centered-text-bigger {
+        font-size: 5rem;
+        margin-top: 1.5rem;
+    }
+
+    .scroll-indicator {
+        bottom: 15px;
+    }
+
+    .scroll-indicator-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajout des media queries pour mobile */
+@media screen and (max-width: 480px) {
+    .centered-text {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .centered-text-bigger {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+        line-height: 1.2;
+    }
+
+    .scroll-indicator {
+        bottom: 10px;
+    }
+
+    .scroll-indicator-text {
+        font-size: 0.8rem;
+    }
+}
   </style>

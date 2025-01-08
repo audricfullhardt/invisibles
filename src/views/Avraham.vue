@@ -97,7 +97,7 @@ p {
     width: 300px;
     height: 300px;
     background-color: #ffffff;
-    background-image: url('../assets/childrens/rania.png');
+    background-image: url('../assets/childrens/avraham.png');
     background-size: cover;
     background-position: center;
 }
@@ -119,5 +119,58 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+/* Ajout des media queries pour tablette */
+@media screen and (max-width: 768px) {
+    .info-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .picture {
+        width: 250px;
+        height: 250px;
+    }
+
+    .video-container {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        grid-column: 1 / 3;
+    }
+}
+
+/* Ajout des media queries pour mobile */
+@media screen and (max-width: 480px) {
+    .info-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .picture {
+        width: 100%;
+        height: 250px;
+    }
+
+    .video-container {
+        grid-column: 1;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        grid-column: 1;
+    }
+
+    .child-content {
+        padding: 10px;
+    }
+
+    .back-button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
 }
 </style>

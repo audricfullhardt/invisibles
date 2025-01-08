@@ -20,4 +20,22 @@
     font-weight: 400;
     font-family: 'Lora', serif;
   }
+
+  /* Ajout des media queries pour tablette */
+  @media screen and (max-width: 768px) {
+    .centered-text {
+        font-size: 2rem;
+        line-height: 1.5;
+        padding: 0 20px;
+    }
+  }
+
+  /* Ajout des media queries pour mobile */
+  @media screen and (max-width: 480px) {
+    .centered-text {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        padding: 0 15px;
+    }
+  }
   </style>  

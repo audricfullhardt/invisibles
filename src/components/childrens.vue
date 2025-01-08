@@ -73,4 +73,44 @@ export default {
 .grid-item-link:hover {
     transform: scale(1.05);
 }
+
+/* Ajout des media queries pour tablette */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        width: 90%;
+        gap: 15px;
+    }
+
+    .childrens-title {
+        font-size: 2rem;
+    }
+
+    .grid-item {
+        min-height: 200px;
+    }
+}
+
+/* Ajout des media queries pour mobile */
+@media screen and (max-width: 480px) {
+    .grid-container {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        gap: 10px;
+    }
+
+    .childrens-title {
+        font-size: 1.5rem;
+        grid-column: 1;
+        margin: 1rem 0;
+    }
+
+    .grid-item {
+        min-height: 150px;
+    }
+
+    .grid-item-link:hover {
+        transform: scale(1.02);
+    }
+}
 </style>
