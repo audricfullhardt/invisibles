@@ -1,29 +1,60 @@
 <template>
   <div class="child-page">
-      <router-link to="/" class="back-button">Retour</router-link>
-    <h1>Histoire de Henry</h1>
-    <!-- Contenu spécifique à Henry -->
+    <a @click="goBackToChildrens" class="back-button">Retour</a>
     <div class="child-content">
-      <!-- Ajoutez ici le contenu spécifique à Henry -->
+        <div class="info-section">
+            <h1>Henry</h1>
+            <div class="picture"></div>
+            <p>Henry et sa mère Naomi ont choisi de garder le sourire...</p>
+        </div>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/nVT_1tVA1RM" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Henry'
+  name: 'Henry',
+  methods: {
+    goBackToChildrens() {
+      this.$router.push('/');
+      setTimeout(() => {
+        const element = document.getElementById('page4');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }
 }
 </script>
 
 <style scoped>
 .child-page {
-  min-height: 100vh; /* Pour occuper toute la hauteur de l'écran */
+  min-height: 100vh;
   padding: 20px;
   background-color: #444444;
 }
+h1 {
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .back-button {
-  /* Styliser votre bouton de retour */
+  margin-top: 20px;
+  padding: 10px 20px;
   color: #ffffff;
   font-family: 'Lora', serif;
   font-size: 1.5rem;
@@ -31,8 +62,41 @@ export default {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
   text-decoration: none;
+  cursor: pointer;
+}
+.child-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.picture {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    background-image: url('../assets/childrens/henry.png');
+    background-size: cover;
+    background-position: center;
+}
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>

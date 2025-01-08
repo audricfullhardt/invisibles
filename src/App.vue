@@ -4,7 +4,9 @@
       <landing />
       <author />
       <intro />
-      <Childrens />
+      <div id="childrens">
+        <Childrens />
+      </div>
     </template>
     <template v-else>
       <router-view></router-view>

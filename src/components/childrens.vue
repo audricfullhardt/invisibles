@@ -1,7 +1,7 @@
 <template>
     <div class="page" id="page4">
         <div class="childrens-title">
-            <h1>Séléctionnez un enfant pour connaître son histoire</h1>
+            <h1>Découvrez leurs histoires</h1>
         </div>
         <div class="grid-container">
             <router-link to="/henry" class="grid-item-link">
